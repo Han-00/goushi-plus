@@ -4,7 +4,6 @@ Garbage Generator - Garbage created by AI from scratch
 """
 
 import random
-import time
 
 
 GARBAGE_ITEMS = [
@@ -27,7 +26,6 @@ def generate_garbage(count: int = 5) -> list:
     for i in range(count):
         item = random.choice(GARBAGE_ITEMS)
         garbage.append(f"[{i + 1}] {item}")
-        time.sleep(0.05)
     return garbage
 
 
@@ -45,6 +43,7 @@ def display_garbage(garbage: list) -> None:
 
 
 def main():
+    """程序入口 / Main entry point"""
     print("🤖 AI正在从0开始制造垃圾...")
     print("🤖 AI is creating garbage from scratch...")
     print()
